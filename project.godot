@@ -11,7 +11,12 @@ config_version=4
 [application]
 
 config/name="Godot_Drag_To_Resize"
+run/main_scene="res://example.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/drag_to_resize/plugin.cfg" )
 
 [physics]
 
