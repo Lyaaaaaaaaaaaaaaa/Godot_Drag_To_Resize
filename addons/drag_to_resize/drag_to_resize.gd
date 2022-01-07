@@ -48,9 +48,9 @@ func _resize_vertical(p_mouse_position_y    : int,
                       p_previous_position_y : int) -> void:
     var difference : int
     difference = p_previous_position_y - p_mouse_position_y
-    if node.rect_min_size.y + difference < min_size.y:
+    if node.rect_min_size.y + difference < min_size.y and min_size.y != 0:
         node.rect_min_size.y = min_size.y
-    elif node.rect_min_size.y + difference > max_size.y:
+    elif node.rect_min_size.y + difference > max_size.y and max_size.y != 0:
         node.rect_min_size.y = max_size.y
     else:
         node.rect_min_size.y += difference
@@ -60,9 +60,9 @@ func _resize_horizontal(p_mouse_position_x    : int,
                         p_previous_position_x : int) -> void:
     var difference : int
     difference = p_mouse_position_x - p_previous_position_x
-    if node.rect_min_size.x + difference < min_size.x:
+    if node.rect_min_size.x + difference < min_size.x and min_size.x != 0:
         node.rect_min_size.x = min_size.x
-    elif node.rect_min_size.x + difference > max_size.x:
+    elif node.rect_min_size.x + difference > max_size.x and max_size.x != 0:
         node.rect_min_size.x = max_size.x
     else:
         node.rect_min_size.x += difference
