@@ -1,18 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/drag_to_resize/drag_to_resize.gd" type="Script" id=1]
 [ext_resource path="res://addons/drag_to_resize/icon.png" type="Texture" id=2]
+[ext_resource path="res://example.gd" type="Script" id=3]
 
 [sub_resource type="GDScript" id=1]
-script/source = "extends TextEdit
-
-func _ready() -> void:
-    print(get_node(\"/root/Control/VBoxContainer\"))
-"
 
 [node name="Control" type="Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -70,5 +67,3 @@ texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
 max_size = Vector2( 1024, 500 )
 min_size = Vector2( 500, 100 )
-node_path_to_resize = "/root/Control/VBoxContainer/HBoxContainer2"
-growing_axe = 2
