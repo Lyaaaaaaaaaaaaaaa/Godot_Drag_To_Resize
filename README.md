@@ -28,3 +28,13 @@ A plugin to easily resize ui elements
   1. Specify the maximum and minimum size allowed (Setting them to 0 disable the limits)
   2. Specify in which axes is the node allowed to grow
   3. Specify path to the node to resize (e.g `/root/path/to/node`) 
+
+## Need help?
+
+Check the example.tscn scene.
+
+## More information:
+
+[Code of conduct](https://github.com/Lyaaaaaaaaaaaaaaa/Godot_Drag_To_Resize/blob/master/CODE_OF_CONDUCT.md)
+
+[How to contribute](https://github.com/Lyaaaaaaaaaaaaaaa/Godot_Drag_To_Resize/blob/master/CONTRIBUTING.md)
