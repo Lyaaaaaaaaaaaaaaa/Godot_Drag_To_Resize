@@ -28,7 +28,6 @@ A plugin to easily resize ui elements
   1. Set the `NodeResizer.node_to_resize` to the node you want to resize. **You need a script to do this. See the `example.gd`**
   2. Specify the maximum and minimum size allowed (Setting them to 0 disable the limits)
   3. Specify in which axes is the node allowed to grow
-  4. Specify path to the node to resize (e.g `/root/path/to/node`) 
 6. `NodeResizer` is a `TextureButton`, give it the icon you want.
 
 ## Need help?
